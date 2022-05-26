@@ -45,5 +45,5 @@ export class ListaJugadoresComponent implements OnInit {
     this.actualizar.emit(this.jugadores);
   }
   
-  comenzar = () => this.start.emit(true);
+  comenzar = () => this.jugadores.length>0 ? this.start.emit(true) : "";
 }
