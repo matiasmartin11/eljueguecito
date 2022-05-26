@@ -26,12 +26,10 @@ export class TarjetaInformacionComponent implements OnInit {
       case 1:
         this.titulo = "Mandar"
         this.descripcion = "Manda a beber a 1 persona"
-        console.log("Manda a beber a 1 persona")
         break;
       case 2:
         this.titulo = "Mandar"
-        this.descripcion = "Manda a beber a 2 persona"
-        console.log("Manda a beber a 2 persona")
+        this.descripcion = "Manda a beber a 2 personas"
         break;
       case 3:
         this.titulo = "Permiso"
@@ -46,7 +44,7 @@ export class TarjetaInformacionComponent implements OnInit {
         this.descripcion = "Crea un gesto (algo que puedas hacer durante un rato). Puedes hacerlo tantas veces como quieras hasta que salga otro jefe. El último en imitarte bebe."
         break;
       case 6:
-        this.titulo = "El/la chulo"
+        this.titulo = "El chulo"
         this.descripcion = "Si no añades muletillas al hablar bebes. Ej: bro, hermana, socio... Termina cuando aparezca un nuevo chulo. "
         break; 
       case 7:
