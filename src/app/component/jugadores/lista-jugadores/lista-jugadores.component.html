@@ -1,0 +1,18 @@
+<app-input-jugadores
+    [lista] = "jugadores"
+    (outputAddButton)="alta($event)" 
+></app-input-jugadores>
+
+<ul>
+    <h3>Lista de jugadores actuales</h3>
+    <!-- mostrar jugador.component -->
+    <app-jugador
+        *ngFor="let jugador of jugadores"
+        [dataJugador]="jugador"
+        (outputJugador) = "eliminar(jugador)"
+    ></app-jugador>
+</ul>
+    
+<div>
+    <button (click)="comenzar()">Comenzar partida</button>
+</div>

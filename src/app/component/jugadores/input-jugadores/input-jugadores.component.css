@@ -1,0 +1,21 @@
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+.input-group > button{
+    margin: 10px;
+}
+.input-group > input{
+    margin: 10px;
+}
+p{
+    color: red;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

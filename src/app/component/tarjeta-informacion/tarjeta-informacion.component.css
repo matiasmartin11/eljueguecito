@@ -1,0 +1,22 @@
+.box p {
+    color: hsl(229, 6%, 66%);
+}
+
+.box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+    padding: 30px;
+    width: 400px;
+    height: fit-content;
+}
+
+img {
+    float: right;
+}
+.blue {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+button{
+    margin: 20px;
+}   

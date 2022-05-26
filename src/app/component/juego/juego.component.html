@@ -1,0 +1,42 @@
+<div
+  *ngIf="!enPartida"
+  class="ps-2">
+  <app-lista-jugadores
+    [enPartida] = "enPartida"
+    (start)="comenzarPartida()"
+    (actualizar)="actualizarLista($event)"
+    [jugadores] = "listaJugadores"
+    ></app-lista-jugadores>
+</div>
+<div
+  *ngIf="enPartida"
+  class="ps-2">
+  <div
+    *ngIf="mostrarTarjeta">
+    <app-tarjeta-informacion  
+      (mostrarTarjeta) = "cambiarMostrarTarjeta()"
+      [numeroGenerado]="numeroGenerado"
+      >
+    </app-tarjeta-informacion>
+  </div>
+  <div
+    *ngIf="!mostrarTarjeta">
+      <app-zona-juego
+      [enPartida] = "enPartida"
+      (siguienteJugador)="cambiarTurno()"
+      (volver)="volver()"
+      (mostrarTarjeta) = "cambiarMostrarTarjeta()"
+      [jugadorActual]= "jugadorActual"
+      (numeroGenerado) = "actualizarNumeroGenerado($event)">
+    </app-zona-juego>
+  </div>
+</div>
+
+<!-- <div>
+  <app-zona-juego
+  [enPartida] = "enPartida"
+  (siguienteJugador)="cambiarTurno()"
+  (volver)="volver()"
+  [jugadorActual]= "jugadorActual"
+></app-zona-juego>
+</div> -->
