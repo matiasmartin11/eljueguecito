@@ -25,7 +25,7 @@ export class ZonaJuegoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
   async clickJugar(){
     if(!this.desactivarBoton){
       //generar numero aleatorio
@@ -34,7 +34,7 @@ export class ZonaJuegoComponent implements OnInit {
       this.numeroGenerado.emit(this.numero);
       //apaga el boton para evitar mas clicks innecesarios
       this.desactivarBoton = true;
-      await this.delay(100).then(()=>{
+      await this.delay(1000).then(()=>{
         //enciende el boton
         this.desactivarBoton = true;
         this.cambiarTurno();
